@@ -11,86 +11,87 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
 ![IMAGE ALT TEXT HERE](Image/Ubuntu_installation.jpg)
 
 3. Ubuntu instructions to install SITL development environment. Please enter the following command at the command line:
-```
-sudo apt-get update
-```
-```
-sudo apt-get install git
-```
-```
-sudo apt-get install gitk git-gui
-```
-```
-sudo apt install software-properties-common
-```
-```
-sudo add-apt-repository ppa:deadsnakes/ppa
-```
-```
-sudo apt install python3-dev gcc
-```
-```
-sudo apt update
-```
-![IMAGE ALT TEXT HERE](Image/sudo_apt_update.jpg)
+   ```
+   sudo apt-get update
+   ```
+   ```
+   sudo apt-get install git
+   ```
+   ```
+   sudo apt-get install gitk git-gui
+   ```
+   ```
+   sudo apt install software-properties-common
+   ```
+   ```
+   sudo add-apt-repository ppa:deadsnakes/ppa
+   ```
+   ```
+   sudo apt install python3-dev gcc
+   ```
+   ```
+   sudo apt update
+   ```
+   ![IMAGE ALT TEXT HERE](Image/sudo_apt_update.jpg)
 
 4. Install python 3.7 and its’ virtual environment package.
-```
-sudo apt-get install python3.7-dev python3.7-venv
-```
-```
-which python3.7 
-```
-The output should be something like /usr/bin/python3.7
-![IMAGE ALT TEXT HERE](Image/python_installation1.jpg)
-![IMAGE ALT TEXT HERE](Image/python_installation2.jpg)
+   ```
+   sudo apt-get install python3.7-dev python3.7-venv
+   ```
+   ```
+   which python3.7 
+   ```
+   The output should be something like /usr/bin/python3.7
+   ![IMAGE ALT TEXT HERE](Image/python_installation1.jpg)
+   ![IMAGE ALT TEXT HERE](Image/python_installation2.jpg)
 
 5. Create Virtual Environment and enter it.
-```
-mkdir virtual_env 
-```   
-```
-/usr/bin/python3.7 -m venv ~/virtual_env/venv_with_python3.7 
-```
-```
-\source ~/virtual_env/venv_with_python3.7/bin/activate 
-```
-```
-python --version 
-```
-![IMAGE ALT TEXT HERE](Image/Virtual_enviroment_creation.jpg)
+   ```
+   mkdir virtual_env 
+   ```   
+   ```
+   /usr/bin/python3.7 -m venv ~/virtual_env/venv_with_python3.7 
+   ```
+   ```
+   \source ~/virtual_env/venv_with_python3.7/bin/activate 
+   ```
+   ```
+   python --version 
+   ```
+   ![IMAGE ALT TEXT HERE](Image/Virtual_enviroment_creation.jpg)
 
 6. Install SITL required packages in Python3.7 virtual environment.
-```
-pip install dronekit==2.9.2 dronekit-sitl==3.3.0 MAVProxy==1.7.1 
-```
-```
-git clone https://github.com/dronekit/dronekit-python.git
-```
-```
-pip uninstall pymavlink 
-```
-```
-wget https://mirrors.aliyun.com/pypi/packages/cd/6a/3a068f16c5549e500a9cdeae738b5a92214174446e5a5ad9d1f6bd51a98b/pymavlink-2.4.8.tar.gz#sha256=b39749d9c75117c03cca8e0ac670d2f5a1fcff89f1567a398b29d0f198c95fb6 
-```
-```
-tar -xzf pymavlink-2.4.8.tar.gz 
-```
-```
-cd pymavlink-2.4.8/ 
-```
-```
-python setup.py install 
-```
-![IMAGE ALT TEXT HERE](Image/Tool_packages_installation.jpg)
-![IMAGE ALT TEXT HERE](Image/Tool_packages_installation2.jpg)
-![IMAGE ALT TEXT HERE](Image/Tool_packages_installation3.jpg)
+   ```
+   pip install dronekit==2.9.2 dronekit-sitl==3.3.0 MAVProxy==1.7.1 
+   ```
+   ```
+   git clone https://github.com/dronekit/dronekit-python.git
+   ```
+   ```
+   pip uninstall pymavlink 
+   ```
+   ```
+   wget https://mirrors.aliyun.com/pypi/packages/cd/6a/3a068f16c5549e500a9cdeae738b5a92214174446e5a5ad9d1f6bd51a98b/pymavlink-2.4.8.tar.gz#sha256=b39749d9c75117c03cca8e0ac670d2f5a1fcff89f1567a398b29d0f198c95fb6 
+   ```
+   ```
+   tar -xzf pymavlink-2.4.8.tar.gz 
+   ```
+   ```
+   cd pymavlink-2.4.8/ 
+   ```
+   ```
+   python setup.py install 
+   ```
+   ![IMAGE ALT TEXT HERE](Image/Tool_packages_installation.jpg)
+   ![IMAGE ALT TEXT HERE](Image/Tool_packages_installation2.jpg)
+   ![IMAGE ALT TEXT HERE](Image/Tool_packages_installation3.jpg)
 
 7. You can check if all the packages version is correct with the example below:
-![IMAGE ALT TEXT HERE](Image/PIP_LIST.jpg)
+   ![IMAGE ALT TEXT HERE](Image/PIP_LIST.jpg)
 
-8. Create a folder named SITL in the root directory of your C drive, then download all the files from Github and save them to the SITL folder.
-
+8. Create a folder named SITL in the root directory of your C drive, download all the files from Github and then extract them to the SITL folder.
+   ![IMAGE ALT TEXT HERE](Image/files_download.jpg)
+   ![IMAGE ALT TEXT HERE](Image/SITL_folder.jpg)
 
 
 
