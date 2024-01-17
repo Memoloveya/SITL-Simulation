@@ -8,8 +8,9 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
 
 ## Installation
 1. MissionPlanner (MP) is a software application used in the field of unmanned aerial vehicles (UAVs) and drones. It is a ground control station (GCS) that provides a user interface for planning, monitoring, and controlling missions for various types of drones. MissionPlanner is commonly associated with the ArduPilot open-source autopilot platform. [Download address](https://ardupilot.org/planner/docs/mission-planner-installation.html)
+
    Notes: You should install all drivers during the installation. And run the MP without enable other features at startup.
-2. 
+3. 
 
   
 ## Updates
