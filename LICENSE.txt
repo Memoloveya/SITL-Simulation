@@ -1,7 +1,8 @@
 MIT License
 
-Copyright (c) 2024 INTELLIGENT AERIAL ROBOTICS, 
-Universiti Sains Malyasia, Malaysia
+Copyright (c) 2024 INTELLIGENT AERIAL ROBOTICS RESEARCH GROUP, 
+Universiti Sains Malaysia, Malaysia
+Prepared by Weijie Kuang; Reviewed by Hann Woei Ho
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
