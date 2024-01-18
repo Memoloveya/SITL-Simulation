@@ -131,7 +131,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ![IMAGE ALT TEXT HERE](Image/MAVProxy.jpg)
 
 7. Now, if you run MP, you will see it automatically connect to the vehicle.
-   ![IMAGE ALT TEXT HERE](Image/MP_connection.jpg.jpg)
+   ![IMAGE ALT TEXT HERE](Image/MP_connection.jpg)
    
 8. Enter the SITL for folder to run the simple_goto.py in the third window.
    ```
