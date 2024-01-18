@@ -143,7 +143,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ![IMAGE ALT TEXT HERE](Image/Simple_goto_commandline.jpg)
    ![IMAGE ALT TEXT HERE](Image/vehicle_fly.jpg)
 
-## Assingment
+## Assignment
 
 1. Changing the home location, target location as you want. Be careful with the sleep time!
 2. Changing the mode to Return To Launch (RTL) by  modifying the python script to let the drone fly back to the home point after every flights.
@@ -178,15 +178,6 @@ To create a new vehicle and broadcaste it, you need to open two more Linux windo
 ![IMAGE ALT TEXT HERE](Image/Simple_goto_two_connection.jpg)
 ![IMAGE ALT TEXT HERE](Image/Simple_goto_two_moving.jpg)
 
-
-```
-@inproceedings{song2020flightmare,
-    title={Flightmare: A Flexible Quadrotor Simulator},
-    author={Song, Yunlong and Naji, Selim and Kaufmann, Elia and Loquercio, Antonio and Scaramuzza, Davide},
-    booktitle={Conference on Robot Learning},
-    year={2020}
-}
-```
 
 ## License
 This project is released under the MIT License. Please review the [License file](LICENSE) for more details.
