@@ -1,7 +1,7 @@
 MIT License
 
-Copyright (c) 2020 Robotics and Perception Group, 
-University of Zurich, Switzerland
+Copyright (c) 2024 INTELLIGENT AERIAL ROBOTICS, 
+Universiti Sains Malyasia, Malaysia
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
