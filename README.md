@@ -180,4 +180,4 @@ To create a new vehicle and broadcaste it, you need to open two more Linux windo
 
 
 ## License
-This project is released under the MIT License. Please review the [License file](LICENSE1) for more details.
+This project is released under the MIT License. Please review the [License file](LICENSE1.txt) for more details.
