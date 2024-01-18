@@ -174,7 +174,7 @@ To create a new vehicle and broadcaste it, you need to open two more Linux windo
    point2 = LocationGlobalRelative(5.145999, 100.493804, 15)
    vehicle2.simple_goto(point2, groundspeed=15)
 
-5. Actually, you also can create and broadcast the vehicle in scripts, please check Swarm_creation.py，then you are avoid to open so many windows.
+5. Actually, you also can create and broadcast the vehicle in scripts, please check [Swarm_creation.py](Swarm_creation.py)，then you are avoid to open so many windows.
 ![IMAGE ALT TEXT HERE](Image/Simple_goto_two_connection.jpg)
 ![IMAGE ALT TEXT HERE](Image/Simple_goto_two_moving.jpg)
 
