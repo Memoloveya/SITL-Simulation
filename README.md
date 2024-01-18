@@ -94,15 +94,15 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ![IMAGE ALT TEXT HERE](Image/PIP_LIST.jpg)
 
 10. Create a folder named SITL in the root directory of your C drive, download all the files from Github and then extract them to the SITL folder. Use this command to copy SITL folder frome windows system to Linux:
-   ```
-   cp -rf "/mnt/c/SITL" ~/dronekit-python/examples/
-   ```
-    Files download:
-    ![IMAGE ALT TEXT HERE](Image/files_download.jpg)
-    Folder creation:
-    ![IMAGE ALT TEXT HERE](Image/SITL_folder.jpg)
-    Folder copied to Linux:
-    ![IMAGE ALT TEXT HERE](Image/file_copy.jpg)
+      ```
+      cp -rf "/mnt/c/SITL" ~/dronekit-python/examples/
+      ```
+       Files download:
+       ![IMAGE ALT TEXT HERE](Image/files_download.jpg)
+       Folder creation:
+       ![IMAGE ALT TEXT HERE](Image/SITL_folder.jpg)
+       Folder copied to Linux:
+       ![IMAGE ALT TEXT HERE](Image/file_copy.jpg)
 ## Vehicle creation, connection and control
 1. Open 3 Linux windows and enter each of their virtual environments. The first one is for dronekit-sitl to create vehicle. The second one is for mavproxy to broadcast vehicle to your scripts and Mission Planner. The third one is for python scripts to control the vehicle.
    ```
