@@ -114,7 +114,8 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ```
    dronekit-sitl copter --home=5.147036,100.493809,0,180
    ```
-   Copter is the mode of vehicle. --home HOME set home location (Latitude, Longitude, Altitude, yaw) 
+   Copter is the mode of vehicle. --home HOME set home location (Latitude, Longitude, Altitude, yaw)
+   For more informations, please check [DroneKit-sitl](https://github.com/dronekit/dronekit-sitl) 
    ![IMAGE ALT TEXT HERE](Image/Dronekit_sitl.jpg)
    
 5. Broadcaste the vehicle in the second window:
