@@ -43,9 +43,10 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ```
    The output should be something like /usr/bin/python3.7
    ![IMAGE ALT TEXT HERE](Image/python_installation1.jpg)
+   Python verison:
    ![IMAGE ALT TEXT HERE](Image/python_installation2.jpg)
 
-5. Create Virtual Environment and enter it.
+6. Create Virtual Environment and enter it.
    ```
    mkdir virtual_env 
    ```   
@@ -60,7 +61,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ```
    ![IMAGE ALT TEXT HERE](Image/Virtual_enviroment_creation.jpg)
 
-6. Install SITL required packages in Python3.7 virtual environment.
+7. Install SITL required packages in Python3.7 virtual environment.
    ```
    pip install dronekit==2.9.2 dronekit-sitl==3.3.0 MAVProxy==1.7.1 
    ```
@@ -82,19 +83,25 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ```
    python setup.py install 
    ```
+   Packages installation:
    ![IMAGE ALT TEXT HERE](Image/Tool_packages_installation.jpg)
+   Pymavlink uninstallation:
    ![IMAGE ALT TEXT HERE](Image/Tool_packages_installation2.jpg)
+   Pymavlink 2.4.8 specific verision installation:
    ![IMAGE ALT TEXT HERE](Image/Tool_packages_installation3.jpg)
 
-7. You can check if all the packages version is correct with the example below:
+9. You can check if all the packages version is correct with the example below:
    ![IMAGE ALT TEXT HERE](Image/PIP_LIST.jpg)
 
-8. Create a folder named SITL in the root directory of your C drive, download all the files from Github and then extract them to the SITL folder. Use this command to copy SITL folder frome windows system to Linux:
+10. Create a folder named SITL in the root directory of your C drive, download all the files from Github and then extract them to the SITL folder. Use this command to copy SITL folder frome windows system to Linux:
    ```
    cp -rf "/mnt/c/SITL" ~/dronekit-python/examples/
    ```
+   Files download:
    ![IMAGE ALT TEXT HERE](Image/files_download.jpg)
+   Folder creation:
    ![IMAGE ALT TEXT HERE](Image/SITL_folder.jpg)
+   Folder copied to Linux:
    ![IMAGE ALT TEXT HERE](Image/file_copy.jpg)
 ## Vehicle creation, connection and control
 1. Open 3 Linux windows and enter each of their virtual environments. The first one is for dronekit-sitl to create vehicle. The second one is for mavproxy to broadcast vehicle to your scripts and Mission Planner. The third one is for python scripts to control the vehicle.
@@ -117,13 +124,15 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    For –master tcp:127.0.0.1:5760, it connects mavproxy with virtual drone 
    For --out udp:127.0.0.1:14551, it adds new port for being connected with python scripts.
    For --out udp:172.28.208.1:14550, it adds new port for being connected with Missionplaner in your Windows system. (172.28.208.1 should be IPv4 address of WSL, By typing ipconfig in Windows Command Prompt you can get IPV4 Ip address)
+   IPV4 address:
    ![IMAGE ALT TEXT HERE](Image/Ipconfig.jpg)
+   Run mavproxy with IPV4 address:
    ![IMAGE ALT TEXT HERE](Image/MAVProxy.jpg)
 
-6. Now, if you run MP, you will see it automatically connect to the vehicle.
+7. Now, if you run MP, you will see it automatically connect to the vehicle.
    ![IMAGE ALT TEXT HERE](Image/MP_connection.jpg.jpg)
    
-7. Enter the SITL for folder to run the simple_goto.py in the third window.
+8. Enter the SITL for folder to run the simple_goto.py in the third window.
    ```
    cd dronekit-python/examples/SITL/
    ```
