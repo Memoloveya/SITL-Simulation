@@ -141,7 +141,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ```
    --connect udp: is used to specify the port for the connection between the script and vehicle.
    ![IMAGE ALT TEXT HERE](Image/Simple_goto_commandline.jpg)
-   ![IMAGE ALT TEXT HERE](Image/One_vehicle_fly.jpg.jpg)
+   ![IMAGE ALT TEXT HERE](Image/One_vehicle_fly.jpg)
 
 ## Assingment
 
