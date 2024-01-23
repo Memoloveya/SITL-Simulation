@@ -7,10 +7,12 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
 
    Notes: You should install all drivers during the installation. And run the MP without enable other features at startup.
 
-2. Open the Microsoft store to allow installing Ubuntu. Then Launch Ubuntu and fill in a username and login. The user name and password is recommended to be the same as the ID of your computer, e. g. CAE1.
-![IMAGE ALT TEXT HERE](Image/Ubuntu_installation.jpg)
+2.  Enable WSL by opening “Control Panel”, “Programs”, “Turn Windows features on or off”, selecting “Windows Subsystem for Linux”, and press OK.
+       ![IMAGE ALT TEXT HERE](Image/WSL_enable.jpg)  
+4.  Open the Microsoft store to allow installing Ubuntu. Then Launch Ubuntu and fill in a username and login. The user name and password is recommended to be the same as the ID of your computer, e. g. CAE1.
+      ![IMAGE ALT TEXT HERE](Image/Ubuntu_installation.jpg)
 
-3. Ubuntu instructions to install SITL development environment. Please enter the following command at the command line:
+5. Ubuntu instructions to install SITL development environment. Please enter the following command at the command line:
    ```
    sudo apt-get update
    ```
@@ -34,7 +36,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ```
    ![IMAGE ALT TEXT HERE](Image/sudo_apt_update.jpg)
 
-4. Install python 3.7 and its’ virtual environment package.
+6. Install python 3.7 and its’ virtual environment package.
    ```
    sudo apt-get install python3.7-dev python3.7-venv
    ```
@@ -46,7 +48,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    Python verison:
    ![IMAGE ALT TEXT HERE](Image/python_installation2.jpg)
 
-6. Create Virtual Environment and enter it.
+7. Create Virtual Environment and enter it.
    ```
    mkdir virtual_env 
    ```   
@@ -61,7 +63,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ```
    ![IMAGE ALT TEXT HERE](Image/Virtual_enviroment_creation.jpg)
 
-7. Install SITL required packages in Python3.7 virtual environment.
+8. Install SITL required packages in Python3.7 virtual environment.
    ```
    pip install dronekit==2.9.2 dronekit-sitl==3.3.0 MAVProxy==1.7.1 
    ```
