@@ -124,7 +124,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    
 5. Broadcaste the vehicle in the second window:
    ```
-   mavproxy.py --master tcp:127.0.0.1:5760 --out udp:127.0.0.1:14551 --out udp:172.28.208.1:14550
+   mavproxy.py --master tcp:127.0.0.1:5760 --out udp:127.0.0.1:14540 --out udp:172.28.208.1:14550
    ```
    For –master tcp:127.0.0.1:5760, it connects mavproxy with virtual drone 
    For --out udp:127.0.0.1:14551, it adds new port for being connected with python scripts.
@@ -142,7 +142,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    cd dronekit-python/examples/SITL/
    ```
    ```
-   python simple_goto.py --connect udp:127.0.0.1:14551
+   python simple_goto.py --connect udp:127.0.0.1:14540
    ```
    --connect udp: is used to specify the port for the connection between the script and vehicle.
    ![IMAGE ALT TEXT HERE](Image/Simple_goto_commandline.jpg)
@@ -166,7 +166,7 @@ To create a new vehicle and broadcaste it, you need to open two more Linux windo
    
 2. Use mavproxy to connect with new vehicle and broadcast it. Be careful not to conflict with other vehicle ports  
    ```
-   mavproxy.py --master tcp:127.0.0.1:5770 --out udp:127.0.0.1:14552 –out udp:172.23.0.1:14551
+   mavproxy.py --master tcp:127.0.0.1:5770 --out udp:127.0.0.1:14541 –out udp:172.23.0.1:14551
    ```
    Look carefully at the port changes in the command!
    
