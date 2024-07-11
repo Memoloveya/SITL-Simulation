@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -37,7 +38,7 @@ if not connection_string:
 print('Connecting to vehicle on: %s' % connection_string)
 vehicle = connect(connection_string, wait_ready=True)
 print("Global Location: %s" % vehicle.location.global_frame.lat)
-print(f"Current mode: {vehicle.mode.name}")
+
 def arm_and_takeoff(vehicle, aTargetAltitude):
     """
     Arms vehicle and fly to aTargetAltitude.
@@ -73,15 +74,31 @@ def arm_and_takeoff(vehicle, aTargetAltitude):
             break
         time.sleep(1)
 
+
+while vehicle.mode.name != "GUIDED":
+    print(f"Current mode: {vehicle.mode.name}, waiting to switch to GUIDED mode...")
+    time.sleep(3)
+
+print("Vehicle has switched to GUIDED mode")
+
 arm_and_takeoff(vehicle, 10)
 
 time.sleep(5)
+print("Set default/target airspeed to 10")
+vehicle.airspeed = 10
 
-print("Going towards first point for 30 seconds ...")
-point1 = LocationGlobalRelative(5.146389, 100.494877, 15)
+print("Going towards first point ...")
+point1 = LocationGlobalRelative(5.1463326, 100.4934266, 15)
 vehicle.simple_goto(point1, groundspeed=10)
 # sleep so we can see the change in map
-time.sleep(30)
+time.sleep(25)
+print("Going towards second point ...")
+point2 = LocationGlobalRelative(5.1463807, 100.4942527, 15)
+vehicle.simple_goto(point2, groundspeed=10)
+# sleep so we can see the change in map
+time.sleep(25)
+
+vehicle.mode = VehicleMode("RTL")
 
 # Close vehicle object before exiting script
 print("Close vehicle object")

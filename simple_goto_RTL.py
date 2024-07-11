@@ -37,7 +37,7 @@ if not connection_string:
 print('Connecting to vehicle on: %s' % connection_string)
 vehicle = connect(connection_string, wait_ready=True)
 print("Global Location: %s" % vehicle.location.global_frame.lat)
-print(f"Current mode: {vehicle.mode.name}")
+
 def arm_and_takeoff(vehicle, aTargetAltitude):
     """
     Arms vehicle and fly to aTargetAltitude.
@@ -76,12 +76,16 @@ def arm_and_takeoff(vehicle, aTargetAltitude):
 arm_and_takeoff(vehicle, 10)
 
 time.sleep(5)
+print("Set default/target airspeed to 10")
+vehicle.airspeed = 10
 
 print("Going towards first point for 30 seconds ...")
 point1 = LocationGlobalRelative(5.146389, 100.494877, 15)
 vehicle.simple_goto(point1, groundspeed=10)
 # sleep so we can see the change in map
 time.sleep(30)
+
+vehicle.mode = VehicleMode("RTL")
 
 # Close vehicle object before exiting script
 print("Close vehicle object")
