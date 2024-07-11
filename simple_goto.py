@@ -76,8 +76,6 @@ def arm_and_takeoff(vehicle, aTargetAltitude):
 arm_and_takeoff(vehicle, 10)
 
 time.sleep(5)
-print("Set default/target airspeed to 10")
-vehicle.airspeed = 10
 
 print("Going towards first point for 30 seconds ...")
 point1 = LocationGlobalRelative(5.146389, 100.494877, 15)
