@@ -155,7 +155,9 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
 3. Modifying the script to start the autonomous mission by manually setting Guided mode.
 4. Adding target points allows the drone to fly along a specified shape trajectory, such as a triangle, square, or pentagram.
 5. Creating multiple vehicles and arranging them d in special shapes, such as four vehicles fly to the four vertices of a square.
-
+```
+cp -rf "/mnt/c/SITL" ~/dronekit-python/examples/
+```
 Hints for assignment no. 4:
 To create a new vehicle and broadcaste it, you need to open two more Linux windows.
 
