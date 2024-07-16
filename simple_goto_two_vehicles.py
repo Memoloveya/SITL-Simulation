@@ -35,7 +35,7 @@ if not connection_string:
 
 # Connect to the Vehicle
 print('Connecting to vehicle on: %s' % connection_string)
-vehicle = connect(connection_string, wait_ready=True)
+vehicle1 = connect(connection_string, wait_ready=True)
 print("Global Location: %s" % vehicle.location.global_frame.lat)
 vehicle2 = connect("udp:127.0.0.1:14541", wait_ready=True)
 def arm_and_takeoff(vehicle, aTargetAltitude):
@@ -74,15 +74,15 @@ def arm_and_takeoff(vehicle, aTargetAltitude):
         time.sleep(1)
 
 
-arm_and_takeoff(vehicle, 10)
+arm_and_takeoff(vehicle1, 10)
 arm_and_takeoff(vehicle2, 10)
 time.sleep(5)
 print("Set default/target airspeed to 10")
-vehicle.airspeed = 10
+vehicle1.airspeed = 10
 
 print("Going towards first point for 30 seconds ...")
 point1 = LocationGlobalRelative(5.146389, 100.494877, 15)
-vehicle.simple_goto(point1, groundspeed=15)
+vehicle1.simple_goto(point1, groundspeed=15)
 point2 = LocationGlobalRelative(5.145999, 100.493804, 15)
 vehicle2.simple_goto(point2, groundspeed=15)
 # sleep so we can see the change in map
@@ -90,13 +90,13 @@ time.sleep(30)
 
 print(" Global Location: %s" % vehicle.location.global_frame)
 
-vehicle.mode = VehicleMode("RTL")
+vehicle1.mode = VehicleMode("RTL")
 vehicle2.mode = VehicleMode("RTL")
 
 # Close vehicle object before exiting script
 print("Close vehicle object")
-vehicle.close()
-
+vehicle1.close()
+vehicle2.close()
 # Shut down simulator if it was started.
 if sitl:
     sitl.stop()
