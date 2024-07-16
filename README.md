@@ -123,14 +123,15 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
    ![IMAGE ALT TEXT HERE](Image/Dronekit_sitl.jpg)
    
 5. Broadcaste the vehicle in the second window:
+   By typing ipconfig in Windows Command Prompt you can get IPV4 Ip address)
+   IPV4 address:
+   ![IMAGE ALT TEXT HERE](Image/Ipconfig.jpg)
    ```
    mavproxy.py --master tcp:127.0.0.1:5760 --out udp:127.0.0.1:14540 --out udp:172.28.208.1:14550
    ```
    For –master tcp:127.0.0.1:5760, it connects mavproxy with virtual drone 
    For --out udp:127.0.0.1:14551, it adds new port for being connected with python scripts.
-   For --out udp:172.28.208.1:14550, it adds new port for being connected with Missionplaner in your Windows system. (172.28.208.1 should be IPv4 address of WSL, By typing ipconfig in Windows Command Prompt you can get IPV4 Ip address)
-   IPV4 address:
-   ![IMAGE ALT TEXT HERE](Image/Ipconfig.jpg)
+   For --out udp:172.28.208.1:14550, it adds new port for being connected with Missionplaner in your Windows system. (172.28.208.1 should be IPv4 address of WSL)
    Run mavproxy with IPV4 address:
    ![IMAGE ALT TEXT HERE](Image/MAVProxy.jpg)
 
