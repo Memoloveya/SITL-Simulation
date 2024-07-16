@@ -91,7 +91,7 @@ time.sleep(30)
 print(" Global Location: %s" % vehicle.location.global_frame)
 
 vehicle.mode = VehicleMode("RTL")
-vehicle1.mode = VehicleMode("RTL")
+vehicle2.mode = VehicleMode("RTL")
 
 # Close vehicle object before exiting script
 print("Close vehicle object")
