@@ -37,7 +37,7 @@ if not connection_string:
 print('Connecting to vehicle on: %s' % connection_string)
 vehicle = connect(connection_string, wait_ready=True)
 print("Global Location: %s" % vehicle.location.global_frame.lat)
-vehicle2 = connect("udp:127.0.0.1:14552", wait_ready=True)
+vehicle2 = connect("udp:127.0.0.1:14541", wait_ready=True)
 def arm_and_takeoff(vehicle, aTargetAltitude):
     """
     Arms vehicle and fly to aTargetAltitude.
