@@ -150,7 +150,7 @@ The SITL (software in the loop) simulator allows you to run Plane, Copter or Rov
 
 ## Assignment
 
-1. Changing the home location, target location as you want. Be careful with the sleep time!
+1. Changing the home location, target location as you want. Be careful with the sleep time! You can pick it up from Google Maps, but watch out for the space character.
 2. Changing the mode to Return To Launch (RTL) by  modifying the python script to let the drone fly back to the home point after every flights.
 3. Modifying the script to start the autonomous mission by manually setting Guided mode.
 4. Adding target points allows the drone to fly along a specified shape trajectory, such as a triangle, square, or pentagram.
