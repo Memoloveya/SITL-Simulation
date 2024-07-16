@@ -27,6 +27,7 @@ vehicle = connect(connection_string, wait_ready=True)
 print("Global Location: %s" % vehicle.location.global_frame.lat)
 print(f"Current mode: {vehicle.mode.name}")
 
+# define the function for arming and taking off the drone
 def arm_and_takeoff(vehicle, aTargetAltitude):
     """
     Arms vehicle and fly to aTargetAltitude.
