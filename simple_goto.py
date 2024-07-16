@@ -1,15 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-"""
-© Copyright 2015-2016, 3D Robotics.
-simple_goto.py: GUIDED mode "simple goto" example (Copter Only)
-
-Demonstrates how to arm and takeoff in Copter and how to navigate to points using Vehicle.simple_goto.
-
-Full documentation is provided at http://python.dronekit.io/examples/simple_goto.html
-"""
-
 from __future__ import print_function
 import time
 from dronekit import connect, VehicleMode, LocationGlobalRelative
@@ -38,6 +26,7 @@ print('Connecting to vehicle on: %s' % connection_string)
 vehicle = connect(connection_string, wait_ready=True)
 print("Global Location: %s" % vehicle.location.global_frame.lat)
 print(f"Current mode: {vehicle.mode.name}")
+
 def arm_and_takeoff(vehicle, aTargetAltitude):
     """
     Arms vehicle and fly to aTargetAltitude.
@@ -73,6 +62,7 @@ def arm_and_takeoff(vehicle, aTargetAltitude):
             break
         time.sleep(1)
 
+#Start of the mission
 arm_and_takeoff(vehicle, 10)
 
 time.sleep(5)
@@ -83,6 +73,7 @@ vehicle.simple_goto(point1, groundspeed=10)
 # sleep so we can see the change in map
 time.sleep(30)
 
+#End of the mission
 # Close vehicle object before exiting script
 print("Close vehicle object")
 vehicle.close()
