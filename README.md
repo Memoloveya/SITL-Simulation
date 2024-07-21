@@ -1,4 +1,6 @@
+# Software in the Loop (SITL)
 
+The SITL (software in the loop) simulator allows you to run Plane, Copter or Rover without any hardware. It is a build of the autopilot code using an ordinary C++ compiler, giving you a native executable that allows you to test the behaviour of the code without hardware.
 ## Vehicle creation, connection and control
 1. Open 3 Linux windows and enter each of their virtual environments. The first one is for dronekit-sitl to create vehicle. The second one is for mavproxy to broadcast vehicle to your scripts and Mission Planner. The third one is for python scripts to control the vehicle.
    ```
