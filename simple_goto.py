@@ -69,7 +69,7 @@ arm_and_takeoff(vehicle, 10)
 time.sleep(5)
 
 print("Going towards first point for 30 seconds ...")
-point1 = LocationGlobalRelative(5.146389, 100.494877, 15)
+point1 = LocationGlobalRelative(5.418501236696289, 100.34651212907279, 15)
 vehicle.simple_goto(point1, groundspeed=10)
 # sleep so we can see the change in map
 time.sleep(30)
